@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Idris Mathenge | Cybersecurity Portfolio</title>
+  <style>
+    :root {
+      --navy: #10243a;
+      --blue: #176b87;
+      --teal: #1c817d;
+      --pale: #f3f7f8;
+      --text: #25384a;
+      --muted: #5c6e7c;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--white);
+    }
+    a { color: var(--blue); }
+    .wrap { width: min(1080px, 90%); margin: auto; }
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 0;
+    }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { color: white; font-weight: 700; text-decoration: none; letter-spacing: .04em; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { color: white; text-decoration: none; font-size: .95rem; }
+    nav a:hover { text-decoration: underline; }
+    .hero { background: var(--pale); padding: 72px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 36px; align-items: center; }
+    .eyebrow { color: var(--teal); text-transform: uppercase; letter-spacing: .12em; font-weight: 700; }
+    h1 { color: var(--navy); font-size: clamp(2.3rem, 6vw, 4rem); line-height: 1.1; margin: 10px 0; }
+    h2 { color: var(--navy); font-size: 2rem; margin: 0 0 18px; }
+    h3 { color: var(--navy); margin: 0 0 8px; }
+    .lead { font-size: 1.2rem; max-width: 690px; }
+    .avatar {
+      width: 170px; height: 170px; border-radius: 50%;
+      display: grid; place-items: center; background: var(--blue);
+      color: white; font-size: 3rem; font-weight: 700;
+      border: 7px solid white; box-shadow: 0 8px 24px #10243a22;
+    }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .button {
+      display: inline-block; padding: 11px 18px; border-radius: 7px;
+      text-decoration: none; font-weight: 700; background: var(--blue); color: white;
+    }
+    .button.secondary { background: white; color: var(--blue); border: 1px solid var(--blue); }
+    section { padding: 58px 0; }
+    section.alt { background: var(--pale); }
+    .intro { max-width: 760px; color: var(--muted); margin-top: -8px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      background: white; padding: 22px; border-radius: 12px;
+      border: 1px solid #dbe5e9; box-shadow: 0 4px 14px #10243a0b;
+    }
+    .tag {
+      display: inline-block; margin: 4px 5px 4px 0; padding: 4px 10px;
+      border-radius: 20px; background: #e5f1f3; color: var(--navy); font-size: .88rem;
+    }
+    .topics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .topic { background: white; padding: 14px; border-radius: 9px; border: 1px solid #dbe5e9; }
+    .topic strong { color: var(--teal); display: block; font-size: .85rem; }
+    .lab-list { columns: 2; padding-left: 20px; }
+    .lab-list li { margin: 0 0 8px; break-inside: avoid; }
+    .contact-box { background: var(--navy); color: white; padding: 28px; border-radius: 12px; }
+    .contact-box h2 { color: white; }
+    .contact-box a { color: #a9e5e2; }
+    footer { background: #0a1929; color: #d9e3eb; padding: 22px 0; font-size: .9rem; }
+    @media (max-width: 760px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .avatar { width: 125px; height: 125px; font-size: 2.3rem; }
+      .grid { grid-template-columns: 1fr; }
+      .topics { grid-template-columns: repeat(2, 1fr); }
+      .lab-list { columns: 1; }
+      .nav { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#">IDRIS MATHENGE</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#labs">Labs</a>
+        <a href="#topics">Topics</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Cybersecurity Portfolio</div>
+          <h1>Idris Mathenge</h1>
+          <p class="lead"><strong>Entry-Level Cybersecurity Analyst</strong> focused on security operations, digital forensics, and malware analysis.</p>
+          <p>Mombasa, Kenya · Building practical skills through guided cybersecurity labs and hands-on projects.</p>
+          <div class="buttons">
+            <a class="button" href="#projects">View projects</a>
+            <a class="button secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="avatar" role="img" aria-label="Photo placeholder for Idris Mathenge">IM</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p class="intro">I am developing my cybersecurity skills through training and guided labs in Linux and Windows fundamentals, networking, web and database security, security operations, digital forensics, and introductory malware analysis. My previous marine engineering work strengthened my attention to procedures, equipment monitoring, and documenting issues.</p>
+        <h3>Core skills</h3>
+        <span class="tag">Linux</span><span class="tag">Windows fundamentals</span>
+        <span class="tag">Python basics</span><span class="tag">Networking</span>
+        <span class="tag">Log analysis</span><span class="tag">Alert triage</span>
+        <span class="tag">Windows forensics</span><span class="tag">OWASP Top 10</span>
+        <span class="tag">Vulnerability assessment</span><span class="tag">Data protection</span>
+
+        <h3 style="margin-top:28px">Training and certifications</h3>
+        <ul>
+          <li>Data Protection Officer Training — Privalex Academy, 2025</li>
+          <li>Security Analyst Training Program — Cyber Shujaa</li>
+          <li>Cybersecurity Essentials — Cisco Networking Academy, 2026</li>
+          <li>Ethical Hacking — Cisco Networking Academy (in progress)</li>
+          <li>Introduction to IoT &amp; Digital Transformation — Cisco, 2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="alt" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="intro">Training and mock projects that demonstrate my learning and practical approach.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Home Cybersecurity Lab Setup</h3>
+            <p>Set up Kali Linux and Ubuntu in a learning environment and practiced Linux operations, authentication, encryption, and network scanning.</p>
+            <p><strong>Focus:</strong> Linux, lab setup, networking fundamentals.</p>
+          </article>
+          <article class="card">
+            <h3>Data Protection Assessment</h3>
+            <p>Completed a mock assessment by mapping data flows, preparing a DPIA, outlining a DSAR workflow, and documenting risks and mitigation controls.</p>
+            <p><strong>Focus:</strong> GDPR concepts, data mapping, risk documentation.</p>
+          </article>
+          <article class="card">
+            <h3>SOC Alert Triage &amp; Log Analysis</h3>
+            <p>In guided labs, reviewed a simulated alert involving a malicious IP, followed the escalation workflow, examined a simulated firewall response, and correlated log events into a timeline.</p>
+            <p><strong>Focus:</strong> alert triage, timestamps, event correlation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="labs">
+      <div class="wrap">
+        <h2>Selected Lab Challenges</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Introduction to Log Analysis</h3>
+            <p><strong>Challenge:</strong> Review sample logs and identify useful events and indicators.</p>
+            <p><strong>Approach:</strong> Filtered and searched log entries, compared timestamps, and organized events into a timeline.</p>
+            <p><strong>Tools:</strong> Linux commands including <code>grep</code>, <code>awk</code>, <code>cut</code>, <code>sort</code>, and <code>uniq</code>; introductory exposure to Splunk and Plaso.</p>
+            <p><strong>Lesson:</strong> Keep timestamps and surrounding context when investigating an alert.</p>
+            <a href="https://tryhackme.com/room/introtologanalysis" target="_blank" rel="noopener">TryHackMe room</a>
+          </article>
+          <article class="card">
+            <h3>Layer 2: MAC Flooding &amp; ARP Spoofing</h3>
+            <p><strong>Challenge:</strong> Learn how MAC table behavior and ARP can affect traffic on a local network.</p>
+            <p><strong>Approach:</strong> Observed traffic in the guided lab and inspected Ethernet and ARP activity.</p>
+            <p><strong>Tools:</strong> Wireshark, tcpdump, and macof in the lab environment.</p>
+            <p><strong>Lesson:</strong> Packet visibility helps explain suspicious local-network behavior.</p>
+            <a href="https://tryhackme.com/room/layer2" target="_blank" rel="noopener">TryHackMe room</a>
+          </article>
+          <article class="card">
+            <h3>Malware Introductory</h3>
+            <p>Completed an introductory malware analysis learning room as part of my security studies.</p>
+            <p><strong>Focus:</strong> Foundational malware analysis concepts and safe, controlled learning.</p>
+            <a href="https://tryhackme.com/room/malmalintroductory" target="_blank" rel="noopener">TryHackMe room</a>
+          </article>
+        </div>
+
+        <h3 style="margin-top:32px">Other completed guided labs</h3>
+        <ul class="lab-list">
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/541" target="_blank" rel="noopener">HTB — Windows Fundamentals</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/18" target="_blank" rel="noopener">HTB — Linux Fundamentals</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/75" target="_blank" rel="noopener">HTB — Introduction to Web Applications</a></li>
+          <li><a href="https://tryhackme.com/room/offensivesecurityintrokKx12" target="_blank" rel="noopener">THM — Introduction to Cyber Security</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/77" target="_blank" rel="noopener">HTB — Getting Started</a></li>
+          <li><a href="https://tryhackme.com/room/pythonbasics" target="_blank" rel="noopener">THM — Python Basics</a></li>
+          <li><a href="https://tryhackme.com/room/passiverecon" target="_blank" rel="noopener">THM — Passive Reconnaissance</a></li>
+          <li><a href="https://tryhackme.com/room/dnsindetail" target="_blank" rel="noopener">THM — DNS in Detail</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/34" target="_blank" rel="noopener">HTB — Introduction to Networking</a></li>
+          <li><a href="https://tryhackme.com/room/threatinteltools" target="_blank" rel="noopener">THM — Threat Intelligence Tools</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/108" target="_blank" rel="noopener">HTB — Vulnerability Assessment</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/39" target="_blank" rel="noopener">HTB — Metasploit Framework</a></li>
+          <li><a href="https://tryhackme.com/room/attacktivedirectory" target="_blank" rel="noopener">THM — Attacktive Directory</a></li>
+          <li><a href="https://tryhackme.com/room/owasptopten2025one" target="_blank" rel="noopener">THM — OWASP Top 10 (2025), Part 1</a></li>
+          <li><a href="https://tryhackme.com/room/owasptopten2025two" target="_blank" rel="noopener">THM — OWASP Top 10 (2025), Part 2</a></li>
+          <li><a href="https://tryhackme.com/room/owasptopten2025three" target="_blank" rel="noopener">THM — OWASP Top 10 (2025), Part 3</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/54" target="_blank" rel="noopener">HTB — Attacking Web Applications with Ffuf</a></li>
+          <li><a href="https://academy.hackthebox.com/achievement/2878349/33" target="_blank" rel="noopener">HTB — SQL Injection Fundamentals</a></li>
+          <li><a href="https://tryhackme.com/room/sweettoothinc" target="_blank" rel="noopener">THM — Sweettooth Inc.</a></li>
+          <li><a href="https://tryhackme.com/room/wifihacking101" target="_blank" rel="noopener">THM — WiFi Hacking 101</a></li>
+          <li><a href="https://tryhackme.com/room/jrsecanalystintrouxo" target="_blank" rel="noopener">THM — Junior Security Analyst Intro</a></li>
+          <li><a href="https://tryhackme.com/room/windowsforensics1" target="_blank" rel="noopener">THM — Windows Forensics 1</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="alt" id="topics">
+      <div class="wrap">
+        <h2>Topics Studied</h2>
+        <div class="topics">
+          <div class="topic"><strong>Week 1</strong>Computing Essentials</div>
+          <div class="topic"><strong>Week 2</strong>Cybersecurity Essentials</div>
+          <div class="topic"><strong>Week 3</strong>Reconnaissance and OSINT</div>
+          <div class="topic"><strong>Week 4</strong>Scanning and Enumeration</div>
+          <div class="topic"><strong>Week 5</strong>Threat and Vulnerability Management</div>
+          <div class="topic"><strong>Week 6</strong>Access Control Security</div>
+          <div class="topic"><strong>Week 7</strong>Web Application Security</div>
+          <div class="topic"><strong>Week 8</strong>Database Security</div>
+          <div class="topic"><strong>Week 9</strong>Wireless Network Security</div>
+          <div class="topic"><strong>Week 10</strong>Security Operations and Monitoring</div>
+          <div class="topic"><strong>Week 11</strong>Digital Forensics</div>
+          <div class="topic"><strong>Week 12</strong>Malware Analysis</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-box">
+        <h2>Contact</h2>
+        <p>Mombasa, Kenya</p>
+        <p>Email: <a href="mailto:idrismathenge7@gmail.com">idrismathenge7@gmail.com</a></p>
+        <p>Phone: <a href="tel:+254794796256">+254 794 796 256</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/idris-m-196271261" target="_blank" rel="noopener">linkedin.com/in/idris-m-196271261</a></p>
+        <p>GitHub: <a href="https://github.com/idriss-01" target="_blank" rel="noopener">github.com/idriss-01</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Idris Mathenge · Cybersecurity Portfolio</div>
+  </footer>
+</body>
+</html>
